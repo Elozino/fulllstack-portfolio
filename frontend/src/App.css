@@ -1,8 +1,38 @@
-.App {
-  text-align: center;
+.app {
+  padding: 0 5rem;
 }
 
-.App-logo {
+.app__container {
+  position: relative;
+}
+
+.app__nav-dots {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.app__nav-dots a {
+  background-color: aliceblue;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 1rem 2rem;
+  }
+
+  .app__nav-dots {
+    display: none;
+  }
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +65,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

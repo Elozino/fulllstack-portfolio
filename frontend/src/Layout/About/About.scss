@@ -1,0 +1,45 @@
+.about__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__header {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 3rem;
+}
+
+.about__stacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__stacks-content {
+  margin: 2rem 2rem 0;
+  max-width: 250px;
+  max-height: 300px;
+  cursor: pointer;
+
+  .about__image {
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+  }
+  h4 {
+    margin: 0.5rem 0;
+    font-variant: small-caps;
+    letter-spacing: 0.15rem;
+    color: var(--light-text);
+  }
+  p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}

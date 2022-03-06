@@ -56,12 +56,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .header__container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
     margin-top: 2rem;
+    height: auto;
     // display: flex;
     // flex-direction: column-reverse;
   }

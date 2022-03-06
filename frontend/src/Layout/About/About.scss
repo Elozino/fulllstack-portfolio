@@ -43,3 +43,11 @@
     letter-spacing: 1px;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .about__container {
+    height: auto;
+    margin-top: 2rem;
+  }
+}

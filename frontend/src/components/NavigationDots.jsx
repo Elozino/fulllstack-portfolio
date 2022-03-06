@@ -3,7 +3,7 @@ import React from "react";
 function NavigationDots({ activeId }) {
   return (
     <div className="app__navigation-dots">
-      {["home", "about", "work", "skills", "conatct"].map((item, i) => (
+      {["home", "about", "work", "skills", "contact"].map((item, i) => (
         // eslint-disable-next-line jsx-a11y/anchor-has-content
         <a
           key={i}

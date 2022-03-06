@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import Art from "../../assets/collabo.png";
 import "./Contact.scss";
+
+import Wrapper from "../../container/Wrapper";
 
 function Contact() {
   const form = useRef();
@@ -11,25 +13,25 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_hudxwwl",
-    //     "template_9e15z5a",
-    //     form.current,
-    //     "user_3V2hD8k43lyi0qVmsxaxz"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log("Email sent");
-    //     },
-    //     (error) => {
-    //       console.log("There was an error");
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_hudxwwl",
+        "template_9e15z5a",
+        form.current,
+        "user_3V2hD8k43lyi0qVmsxaxz"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent");
+        },
+        (error) => {
+          console.log("There was an error");
+        }
+      );
 
-    // nameRef.current.value = "";
-    // emailRef.current.value = "";
-    // messageRef.current.value = "";
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
   };
 
   return (
@@ -74,4 +76,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Wrapper(Contact, "contact");

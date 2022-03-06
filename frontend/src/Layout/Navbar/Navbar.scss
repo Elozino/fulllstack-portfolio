@@ -6,6 +6,7 @@
   -webkit-backdrop-shadow: blur(3px);
 
   position: sticky;
+  z-index: 100;
   top: 0;
   width: 100%;
 
@@ -32,7 +33,7 @@
   transition: all 1s ease-in-out;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 840px) {
   .nav__menu {
     display: block;
     cursor: pointer;

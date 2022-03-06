@@ -6,6 +6,8 @@
   box-shadow: 0px -2px 20px var(--tertiary-bg);
   padding: 60px 85px;
   color: #d6fcff;
+  width: 95%;
+  margin: auto;
 }
 
 .contact__collaboration-image img {
@@ -50,6 +52,8 @@
       cursor: pointer;
       font-variant: small-caps;
       font-size: 1.2rem;
+      border: 3px dashed var(--tertiary-bg);
+    
     }
   }
 }
@@ -64,6 +68,7 @@
   .contact__container {
     flex-wrap: wrap;
     padding: 60px 27px;
+    width: 100%;
   }
   .contact__form-container {
     width: 100%;

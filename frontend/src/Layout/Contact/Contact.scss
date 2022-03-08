@@ -5,7 +5,7 @@
   border-radius: 0.5rem;
   box-shadow: 0px -2px 20px var(--tertiary-bg);
   padding: 60px 85px;
-  color: #d6fcff;
+
   width: 95%;
   margin: auto;
 }
@@ -26,6 +26,8 @@
   .contact__form {
     label {
       padding-bottom: 1rem;
+      color: #000;
+      font-weight: 500;
     }
     input,
     textarea {
@@ -40,6 +42,8 @@
 
       &::placeholder {
         color: var(--tertiary-bg);
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 2px;
       }
     }
 
@@ -53,12 +57,15 @@
       font-variant: small-caps;
       font-size: 1.2rem;
       border: 3px dashed var(--tertiary-bg);
-    
     }
   }
 }
 
 @media screen and (max-width: 920px) {
+  .contact__container{
+    margin-top: 10rem;
+  }
+
   .contact__form-container {
     width: 70%;
   }

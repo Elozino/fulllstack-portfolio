@@ -18,9 +18,9 @@ function Header() {
           <h1>
             Hello, I am <span>Elozino Ovedhe</span>
           </h1>
-          <h3>
+          <h2>
             A <span>Frontend Developer</span>
-          </h3>
+          </h2>
           <div className="header__info-content">
             {/* <h1>
             <span className="greet">Hello 👋🏽</span>

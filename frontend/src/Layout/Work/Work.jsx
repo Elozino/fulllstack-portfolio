@@ -71,7 +71,7 @@ function Work() {
               className="work__portfolio"
             >
               <div className="work__portfolio-image">
-                <img src={urlFor(item.imgUrl)} alt={item.name} />
+                <img src={urlFor(item.imgUrl)} alt={item.title} />
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{
@@ -108,9 +108,9 @@ function Work() {
                 </motion.div>
               </div>
               <div className="work__portfolio-content">
-                <h4>{item.title}</h4>
+                <p className="work__tag-title">{item.title}</p>
                 <p>{item.description}</p>
-                <h5>{item?.tags[0]}</h5>
+                <p className="work__tag-name">{item?.tags[0]}</p>
               </div>
             </motion.div>
           ))}

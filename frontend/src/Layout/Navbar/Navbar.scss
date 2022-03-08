@@ -23,8 +23,12 @@
   li {
     cursor: pointer;
     font-variant: small-caps;
-    font-weight: bolder;
     letter-spacing: 2px;
+    a{
+      color: #000;
+      font-weight: 900;
+      font-size: 1.3rem;
+    }
   }
 }
 

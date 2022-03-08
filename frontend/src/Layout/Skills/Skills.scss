@@ -40,8 +40,15 @@
   }
   p {
     margin-top: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     // font-variant: small-caps;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .skill_container {
+    margin: 10rem 0;
   }
 }
 

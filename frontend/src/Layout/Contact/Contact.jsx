@@ -81,6 +81,7 @@ function Contact() {
               cols="30"
               rows="10"
               ref={messageRef}
+              placeholder="Enter your message..."
             ></textarea>
           </div>
           <div>

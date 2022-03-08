@@ -13,19 +13,26 @@
 
   h1 {
     font-variant-caps: small-caps;
+    // font-style: italic;
     // font-size: 2rem;
+  }
+
+  h2 {
+    font-variant: small-caps;
+    font-size: 1.72rem;
+    text-align: left;
   }
 
   h3 {
     font-variant: small-caps;
-    // font-size: 1.3rem;
+    font-size: 1.72rem;
   }
 
   p {
     line-height: 1.5;
     word-spacing: 2px;
-    font-weight: 300;
-    // font-weight: 400;
+    font-weight: 500;
+    
   }
 
   .header__resume-btn {
@@ -43,14 +50,10 @@
   img {
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    max-width: 30rem;
     border-radius: 10%;
     transform: rotate(3deg);
-    // transition: transform 3s ease-in-out;
-    // transform-style: preserve-3d;
-    // will-change: transform;
     &:hover {
-      // transform: rotate(360deg);
       transform: translateZ(12px);
     }
   }
@@ -63,7 +66,27 @@
     justify-content: start;
     margin-top: 2rem;
     height: auto;
-    // display: flex;
-    // flex-direction: column-reverse;
+  }
+
+  .header__info {
+    h1 {
+      font-variant-caps: small-caps;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-variant: small-caps;
+      font-size: 1rem;
+      // text-align: left;
+    }
+
+    h3 {
+      font-variant: small-caps;
+      font-size: 1rem;
+    }
+    p{
+      font-size: .8rem;
+    }
   }
 }

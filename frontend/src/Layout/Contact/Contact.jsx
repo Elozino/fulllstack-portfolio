@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Art from "../../assets/collabo.png";
 import "./Contact.scss";
 
 import Wrapper from "../../container/Wrapper";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -35,7 +36,12 @@ function Contact() {
   };
 
   return (
-    <div className="contact__container" id="contact">
+    <motion.div
+      className="contact__container"
+      id="contact"
+      whileInView={{ opacity: [0, 1], y: [100, 0] }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="contact__collaboration-image">
         <img src={Art} alt="" width="500px" />
       </div>
@@ -47,12 +53,24 @@ function Contact() {
           <div>
             <label>Name</label>
             <br />
-            <input type="text" name="from_name" id="from_name" ref={nameRef} placeholder="Enter your name" />
+            <input
+              type="text"
+              name="from_name"
+              id="from_name"
+              ref={nameRef}
+              placeholder="Enter your name"
+            />
           </div>
           <div>
             <label>Email</label>
             <br />
-            <input type="email" name="email" id="email" ref={emailRef} placeholder="Enter your email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              ref={emailRef}
+              placeholder="Enter your email"
+            />
           </div>
           <div>
             <label>Message</label>
@@ -72,7 +90,7 @@ function Contact() {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

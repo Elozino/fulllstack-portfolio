@@ -23,12 +23,17 @@ function Work() {
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
-    // setFilterWork(item);
-    // setAnimateCard([{ y: 100, opacity: 0 }]);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
 
-    // setTimeout(() => {
-    //   setAnimateCard([{ y: 100, opacity: 0 }]);
-    // }, 500);
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+
+      if (item === "All") {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
   };
   return (
     <div className="work__container">

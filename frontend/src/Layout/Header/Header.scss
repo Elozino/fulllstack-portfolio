@@ -13,8 +13,6 @@
 
   h1 {
     font-variant-caps: small-caps;
-    // font-style: italic;
-    // font-size: 2rem;
   }
 
   h2 {
@@ -63,7 +61,7 @@
   .header__container {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 2rem;
     height: auto;
   }
@@ -78,7 +76,7 @@
     h2 {
       font-variant: small-caps;
       font-size: 1rem;
-      // text-align: left;
+      text-align: center;
     }
 
     h3 {

@@ -6,8 +6,13 @@ import { motion } from "framer-motion";
 
 import { urlFor, client } from "../../client";
 import Wrapper from "../../container/Wrapper";
+import { Link } from "react-router-dom";
 
-function Work() {
+function Work({ props }) {
+  useEffect(() => {
+    console.log({props});
+  });
+
   const [activeFilter, setActiveFilter] = useState("All");
   const [works, setWorks] = useState([]);
   const [filterWorks, setFilterWork] = useState([]);
@@ -34,6 +39,11 @@ function Work() {
         setFilterWork(works.filter((work) => work.tags.includes(item)));
       }
     }, 500);
+  };
+
+  const handleNavView = () => {
+    // setisAllWork(!isAllWork);
+    alert("Coming Soon...")
   };
   return (
     <div className="work__container">
@@ -115,6 +125,12 @@ function Work() {
             </motion.div>
           ))}
       </motion.div>
+
+      <div className="work__btn-container" onClick={handleNavView}>
+        <p className="work__btn">
+          <Link to="/allworks">All Works</Link>
+        </p>
+      </div>
     </div>
   );
 }

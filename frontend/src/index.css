@@ -36,10 +36,9 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   background-color: rgb(187, 187, 228);
-  color:  rgb(23, 21, 26);
+  color: rgb(23, 21, 26);
   background: var(--light-bg);
   overflow-x: hidden;
+  width: 100%;
   max-width: 2000px;
 }
-
-

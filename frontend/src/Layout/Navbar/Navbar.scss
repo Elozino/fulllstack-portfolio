@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // overflow-x: hidden;
 }
 
 .nav__nav-link {
@@ -24,17 +25,16 @@
     cursor: pointer;
     font-variant: small-caps;
     letter-spacing: 2px;
-    a{
+    a {
       color: #000;
       font-weight: 900;
       font-size: 1.3rem;
     }
   }
 
-  .link_li{
+  .link_li {
     width: 100%;
     text-align: end;
-
   }
 }
 
@@ -70,13 +70,12 @@
 
     @keyframes open {
       0% {
-        right: -100vw;
+        right: -100%;
         transform: scale(0);
       }
       100% {
         right: 0%;
         transform: scale(1);
-        z-index: 10;
         z-index: 10;
       }
     }
@@ -85,22 +84,22 @@
       0% {
         right: 0%;
         transform: scale(1);
-        z-index: 10;
       }
       100% {
-        right: -100vw;
+        right: -100%;
         transform: scale(0);
-        z-index: 10;
+        z-index: 0;
       }
     }
-  }
-
-  .close {
-    animation: close 2s ease-in-out;
   }
 
   .active {
     animation: open 2s ease-in-out;
     right: 0;
+  }
+
+  .close {
+    animation: close 2s ease-in-out;
+    right: -100%;
   }
 }

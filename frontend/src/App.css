@@ -1,5 +1,7 @@
 .app {
   padding: 0 5rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .app__container {

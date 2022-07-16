@@ -1,19 +1,12 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { AllWorks, Footer, Home, Navbar } from "./Layout";
-import { useState } from "react";
+import { AllWorks, Footer, Home } from "./Layout";
 
 function App() {
-  const [isAllWork, setisAllWork] = useState(false);
-
   return (
     <div className="app">
-      <Navbar isAllWork={isAllWork} setisAllWork={setisAllWork} />
       <Routes>
-        <Route
-          index
-          element={<Home setisAllWork={setisAllWork} isAllWork={isAllWork} />}
-        />
+        <Route index element={<Home />} />
         <Route path="/allworks" element={<AllWorks />} />
       </Routes>
       <Footer />

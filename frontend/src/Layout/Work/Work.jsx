@@ -8,10 +8,8 @@ import { urlFor, client } from "../../client";
 import Wrapper from "../../container/Wrapper";
 import { Link } from "react-router-dom";
 
-function Work({ props }) {
-  useEffect(() => {
-    console.log({props});
-  });
+function Work({ isAllWork }) {
+  console.log(isAllWork);
 
   const [activeFilter, setActiveFilter] = useState("All");
   const [works, setWorks] = useState([]);
@@ -42,8 +40,7 @@ function Work({ props }) {
   };
 
   const handleNavView = () => {
-    // setisAllWork(!isAllWork);
-    alert("Coming Soon...")
+
   };
   return (
     <div className="work__container">
@@ -58,9 +55,8 @@ function Work({ props }) {
           <div
             key={i}
             onClick={() => handleWorkFilter(item)}
-            className={`tags ${
-              activeFilter === item ? "work__filter-active" : ""
-            }`}
+            className={`tags ${activeFilter === item ? "work__filter-active" : ""
+              }`}
           >
             {item}
           </div>
@@ -121,6 +117,11 @@ function Work({ props }) {
                 <p className="work__tag-title">{item.title}</p>
                 <p>{item.description}</p>
                 <p className="work__tag-name">{item?.tags[0]}</p>
+                <div className="work__tools">
+                  {item?.tools?.map(tool =>
+                    <div key={tool}>{tool}</div>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

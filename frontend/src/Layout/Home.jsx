@@ -1,13 +1,15 @@
-import React from "react";
-import { About, Contact, Header, Skills, Work } from "./index";
+import React, { useState } from "react";
+import { About, Contact, Header, Navbar, Skills, Work } from "./index";
 
-function Home({ isAllWork, setisAllWork }) {
-  console.log(isAllWork);
+function Home() {
+  const [isAllWork, setisAllWork] = useState(false);
+
   return (
     <main>
+      <Navbar isAllWork={isAllWork} setisAllWork={setisAllWork} />
       <Header />
       <About />
-      <Work isAllWork={isAllWork} />
+      <Work isAllWork={isAllWork} setisAllWork={setisAllWork} />
       <Skills />
       <Contact />
     </main>

@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar({ isAllWork}) {
   const [menu, setMenu] = useState(true);
+  console.log(isAllWork)
 
   return (
     <nav className="nav">

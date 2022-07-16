@@ -10,7 +10,7 @@ function About() {
   useEffect(() => {
     const query = "*[_type == 'about']";
     client.fetch(query).then((data) => {
-      console.log(data);
+      // console.log(data);
       setAbouts(data);
     });
   }, []);

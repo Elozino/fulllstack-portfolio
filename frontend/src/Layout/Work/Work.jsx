@@ -9,7 +9,7 @@ import Wrapper from "../../container/Wrapper";
 import { Link } from "react-router-dom";
 
 function Work({ isAllWork }) {
-  console.log(isAllWork);
+  // console.log({ isAllWork });
 
   const [activeFilter, setActiveFilter] = useState("All");
   const [works, setWorks] = useState([]);
@@ -42,6 +42,7 @@ function Work({ isAllWork }) {
   const handleNavView = () => {
 
   };
+  
   return (
     <div className="work__container">
       <h2>My personal Works </h2>

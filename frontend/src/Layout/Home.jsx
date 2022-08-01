@@ -6,10 +6,16 @@ function Home() {
 
   return (
     <main>
-      <Navbar isAllWork={isAllWork} setisAllWork={setisAllWork} />
+      <Navbar
+        isAllWork={isAllWork}
+        setisAllWork={setisAllWork}
+      />
       <Header />
       <About />
-      <Work isAllWork={isAllWork} setisAllWork={setisAllWork} />
+      <Work
+        isAllWork={isAllWork}
+        setisAllWork={setisAllWork}
+      />
       <Skills />
       <Contact />
     </main>

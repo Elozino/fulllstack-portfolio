@@ -3,9 +3,8 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function Navbar({ isAllWork}) {
+function Navbar({ isAllWork }) {
   const [menu, setMenu] = useState(true);
-  console.log(isAllWork)
 
   return (
     <nav className="nav">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Skills.scss";
 
-import { AiFillGithub, AiFillEye } from "react-icons/ai";
+// import { AiFillGithub, AiFillEye } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { urlFor, client } from "../../client";

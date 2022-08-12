@@ -35,7 +35,7 @@ function Header() {
               that brings value.
             </p>
           </div>
-          <a href="/ElozinoResume.pdf" download="Elozino's CV">
+          <a href="/Elozino CV.pdf" download="Elozino's CV">
             <button className="header__resume-btn">DOWNLOAD CV</button>
           </a>
         </motion.div>

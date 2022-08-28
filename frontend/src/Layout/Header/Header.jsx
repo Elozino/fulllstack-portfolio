@@ -38,6 +38,9 @@ function Header() {
           <a href="/Elozino CV.pdf" download="Elozino's CV">
             <button className="header__resume-btn">DOWNLOAD CV</button>
           </a>
+          <a href="/https://drive.google.com/file/d/1Tk3gpN-eAGguMQuf17UkbGWoaEHbZ8xx/view?usp=sharing">
+            <button className="header__resume-btn">DOWNLOAD CV</button>
+          </a>
         </motion.div>
       </section>
       <section className="header__avatar">
